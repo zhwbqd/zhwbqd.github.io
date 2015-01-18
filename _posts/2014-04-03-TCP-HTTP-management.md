@@ -2,7 +2,7 @@
 layout: post
 title: "TCP与HTTP连接管理"
 comments: true
-tags: 技术, 网络
+tags: 网络
 ---
 
 ### HTTP事务时延原因(HTTP权威指南 P86)
