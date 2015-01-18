@@ -6,11 +6,27 @@
 
 <div class="sidebar well">
     <h1>Recent Posts</h1>
-    <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
-    </ul>
+</div>
+
+<div class="sidebar well">
+    <h1>Related Posts</h1>
+        {% for post in site.related_posts limit:5 %}
+          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+</div>
+
+<div class="sidebar well">
+    <h1>Tags Cloud</h1>
+	    {% for tag in site.tags %}
+	    <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%">
+		<a href="/{{ tag | first | slugize }}/">
+		    {{ tag | first }}
+		</a>
+	    </li>
+	    {% endfor %}
 </div>
 
 <div class="sidebar well">
