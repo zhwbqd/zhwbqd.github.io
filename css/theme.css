@@ -24,6 +24,10 @@ body {
     color: #428bca;
 }
 
+.tagcloud ul {
+    list-style-type:none
+}
+
 .sidebar li {
     margin-top: .7em;
     line-height: 1em;
