@@ -1,25 +1,12 @@
-My blog
-============
+# Type Theme
 
-> * Share my experience
-> * Show my code
-> * Share my techincal view
+![Default Type Theme blog](https://cloud.githubusercontent.com/assets/816965/5142407/19742e48-71d6-11e4-8d9d-fdfe010784f0.png)
 
-Done:
-1. add comment using Disqus
-2. add Google analysis
-3. add github follower button
+Type Theme is a free and open-source [Jekyll](http://jekyllrb.com) theme, that's highly customizable and built for blogging.
 
-Todo:
-1. add tags page
-2. archive by date/tags 
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-* Get it from [github](https://github.com/zhwbqd/zhwbqd.github.io).
+[Using Type](https://rohanchandra.github.io/project/type.html)
 
-A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
-(not to be confused with jekyll-bootstrap) that's easy to modify and very
-modular in component and element reuse.
-
-Theme Original
-=============
-[the original theme on github](https://github.com/scotte/jekyll-clean)
+## License
+The MIT License (MIT)

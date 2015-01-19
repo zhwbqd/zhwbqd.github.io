@@ -1,35 +1,65 @@
-# Jekyll configuration
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zhwbqd.github.io" # the base hostname & protocol for your site
 
-name: Jack's Blog
-description: Stay hungry, Stay foolish
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Jack's Blog
+  avatar: zhwbqd-avatar.jpeg
+  gravatar: aee4da6020976f0ffe84811c869669a6
+  description: "Stay hungry, Stay foolish." # used by search engines
+  
+  # Header and footer text
+  header_text: >
+     <p>Stay hungry, Stay foolish.</p>
+  footer_text: >
+     Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
+  
+  # Icons
+  rss: true
+  email_address: "zhwbqd@gmail.com"
+  behance:
+  bitbucket: 
+  dribbble: 
+  facebook: 
+  flickr: 
+  github: "zhwbqd/zhwbqd.github.io"
+  google_plus: 
+  instagram: 
+  linkedin: "cn.linkedin.com/in/zhwbqd" 
+  pinterest: 
+  reddit: 
+  soundcloud: 
+  stack_exchange:  # full URL
+  steam: 
+  tumblr: 
+  twitter: 
+  wordpress: 
+  youtube: 
+  
+  # Scripts
+  google_analytics: "UA-58678545-1"
+  disqus_shortname: "zhwbqd"
+  
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+  
+  # Colors, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
 
-# url is currently only used only for the RSS feed in feed.xml
-url: http://zhwbqd.github.io
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
 
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
-baseurl: 
-
-# This can be '' to hide the Github nav button
-github: 'zhwbqd/zhwbqd.github.io'
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-58678545-1'
-
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: 'zhwbqd'
-comments: true
-
-permalink: /:year/:month/:title
-paginate: 3
-
+# BUILD SETTINGS
+markdown: kramdown
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-
-exclude: ['README.md', 'LICENSE']
+sass:
+  sass_dir: _sass
+  style: :compressed
