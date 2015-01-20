@@ -12,6 +12,7 @@ I am Jack, Developer
   <li><a href="https://github.com/zhwbqd">Jack's GitHub</a></li>
   <li><a href="http://shanhh.com">Dan's Blog</a></li>
   <li><a href="http://walterinsh.github.io">Walter's Blog</a></li>
+  <li><a href="http://cherrylee.name/">Cherry's Blog</a></li>
 </ul>
 
 <iframe src="http://ghbtns.com/github-btn.html?user=zhwbqd&type=follow&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
