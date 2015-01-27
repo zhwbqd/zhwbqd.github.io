@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Schedule实现解析"
+title: "Spring Scheduler实现解析"
 comments: true
 tags: Spring
 ---
