@@ -4,9 +4,6 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- CSS -->
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-	
 	<!--Favicon-->
 	<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
 	
@@ -16,10 +13,4 @@
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 	
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
-	
-	<!-- Google Fonts -->
-	<link type="text/css" rel="stylesheet" href="{{ "/css/google-font.css" | prepend: site.baseurl }}" >
-		
 </head>
