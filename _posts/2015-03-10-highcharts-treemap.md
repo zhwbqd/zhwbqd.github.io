@@ -55,7 +55,7 @@ Treemap的数据这两个元素是必须的 [{'name':'xxx', 'value': 123}], tree
 
 ----------------------------------------
 
-下面是一个完整的例子, 我在重要位置加了注释, 效果展示在[这里](https://jsfiddle.net/6wngv8xx/)
+下面是一个完整的例子, 我在重要位置加了注释, 效果展示在[这里](https://jsfiddle.net/zhwbqd/6wngv8xx/2/)
 
 ```javascript
 function treemap (data) {
