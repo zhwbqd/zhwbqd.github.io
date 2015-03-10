@@ -25,28 +25,28 @@ Treemap的数据这两个元素是必须的 [{'name':'xxx', 'value': 123}], tree
 
 #### 可视化方面
 
-1. Treemap可分多层, 可以展示数据直接的包含关系. 比如: 报告每个部门的完成数量, 点击每个部门可以看到每个小组的情况, 点击小组可以看到每个人的情况.
+* Treemap可分多层, 可以展示数据直接的包含关系. 比如: 报告每个部门的完成数量, 点击每个部门可以看到每个小组的情况, 点击小组可以看到每个人的情况.
 
 > 在数据层面需要比默认的多两个元素 id 和 parent, id加在每个数据上, parent加在子数据上指定父数据的 id
  [{'id':'1','name':'parent', 'value': 123},{{'id':'2','name':'child', 'value': 123,'parent':'1'}}]
 
 [官方的例子在这边](http://jsfiddle.net/gh/get/jquery/1.7.2/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/treemap-large-dataset)
 
-2. Treemap可对每个数据指定颜色, 也可以根据 value 值的大小自己进行颜色过渡
+* Treemap可对每个数据指定颜色, 也可以根据 value 值的大小自己进行颜色过渡
 
-2.1 自己指定颜色:
++ 自己指定颜色:
 
 > 在数据层面需要比默认的多一个元素 color, 可用rgb(xxx,xxx,xxx), 也可使用十六进制颜色值(#FFFFFF), 也可使用highcharts的随机色(Highcharts.getOptions().colors[xxx])
  [{'id':'1','name':'parent', 'value': 123, 'color':'rgb(199,199,199)'},{{'id':'2','name':'child', 'value': 123,'parent':'1','color':'#FFFFFF'}}]
 
-2.2 使用渐变过渡:
++ 使用渐变过渡:
 
 > 数据层面增加colorValue元素, 值域是整数, 另外需要引入heatmap.js. *但如果数据有层级, 且指定了渐变过渡, 那么展示会有问题.* **另外, treemap的子元素颜色会覆盖父元素颜色, 所以这块要考虑清楚**
  
 [官方的例子在这边](http://jsfiddle.net/gh/get/jquery/1.7.2/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/treemap-coloraxis)
 
 
-3. Treemap可对展示的文字和tooltips进行个性配置. 其实主要就是修改显示内容, 字体大小, 颜色等
+* Treemap可对展示的文字和tooltips进行个性配置. 其实主要就是修改显示内容, 字体大小, 颜色等
 
 > 对于dataLabels的配置在[这里](http://api.highcharts.com/highcharts#plotOptions.treemap.dataLabels)
 > 对于tooltip的配置在[这里](http://api.highcharts.com/highcharts#plotOptions.treemap.tooltip)
