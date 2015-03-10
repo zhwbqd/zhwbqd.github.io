@@ -10,7 +10,7 @@ tags: 个人
 
 1. 新的站点存在较少的链接指向, 甚至可能没有, 造成无法被搜索引擎的爬虫抓到.
 > * 可以向[Google Webmasters](https://www.google.com/webmasters) 或者[百度站长](http://zhanzhang.baidu.com) 进行网站注册
-> * 页面之间应该有广泛的互联性, 满足站点中任何页面可以通过回连到达主页, 不满足这一点的最好在站长管理页面上传sitemap.xml
+> * 页面之间应该有广泛的互联性, 满足站点中任何页面可以通过回连到达主页, 不满足这一点的最好在站长管理页面上传sitemap.xml, 用feed.xml也可以
 > * 最简单的当然就是在自己朋友圈互相加友情链接, 但是这个效果并不明显
 
 2. 在搜索引擎的展示页给出具有吸引力的描述, 提升Ranking和相关度
@@ -24,3 +24,5 @@ tags: 个人
 ```
 
 基本上做到这两点, 被搜索引擎收录问题就不大了, 按照28原则, 如果还需要更深入的SEO的话, 就需要从页面内容和整个网站布局上深入下功夫了
+
+推荐google的SEO优化指南, [点击下载](http://static.googleusercontent.com/media/www.google.com/en//intl/zh-CN/webmasters/docs/search-engine-optimization-starter-guide-zh-cn.pdf)
