@@ -20,7 +20,6 @@ feature-img: "img/sample_feature_img_2.png"
 <h3>友情链接</h3>
 <ul>
   <li><a href="https://github.com/zhwbqd">Jack's GitHub</a></li>
-  <li><a href="http://shanhh.com">Dan's Blog</a></li>
   <li><a href="http://walterinsh.github.io">Walter's Blog</a></li>
   <li><a href="http://cherrylee.name/">Cherry's Blog</a></li>
 </ul>
