@@ -180,7 +180,7 @@ Counter counter = new Counter() {
             }
         };
 		
-		
+//以下是从OpenJDK copy来的, 保留行号.
 1047		public final long getAndAddLong(Object o, long offset, long delta) {
 1048        long v;
 1049        do {
