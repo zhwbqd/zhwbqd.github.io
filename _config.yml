@@ -8,7 +8,7 @@ theme:
   title: Jack's Blog
   avatar: zhwbqd-avatar.jpeg
   gravatar: aee4da6020976f0ffe84811c869669a6
-  description: "Stay hungry, Stay foolish." # used by search engines
+  description: "张文斌的博客" # used by search engines
   
   # Header and footer text
   header_text: >
