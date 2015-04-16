@@ -7,6 +7,8 @@ tags: JS
 
 用过Sonar的同学都会对它的treemap印象深刻(这个Treemap不是指那个基于红黑树的数据结构哈), Treemap的好处是可以将大批量数据进行分层次展示, 清晰而且交互感强.
 
+![架构图](/post_imgs/sonarTreeMap.jpg)
+
 [知乎上有个专栏专门介绍Treemap及它的一些应用](http://zhuanlan.zhihu.com/datavis/19894525)
 
 ---------------------------
