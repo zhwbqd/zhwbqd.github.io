@@ -1,68 +1,40 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://zhwbqd.github.io" # the base hostname & protocol for your site
+title: Jack's Blog
+tagline: 有志者事竟成
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: Jack's Blog
-  avatar: zhwbqd-avatar.jpeg
-  gravatar: aee4da6020976f0ffe84811c869669a6
-  description: "张文斌的博客" # used by search engines
-  
-  # Header and footer text
-  header_text: >
-     <p>Stay hungry, Stay foolish.</p>
-  footer_text: >
-     Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type.html">Type Theme</a>
-  
-  # Icons
-  rss: true
-  email_address: "zhwbqd@gmail.com"
-  behance:
-  bitbucket: 
-  dribbble: 
-  facebook: 
-  flickr: 
-  github: "zhwbqd/zhwbqd.github.io"
-  google_plus: 
-  instagram: 
-  linkedin: "https://cn.linkedin.com/in/zhwbqd" 
-  pinterest: 
-  reddit: 
-  soundcloud: 
-  stack_exchange:  # full URL
-  steam: 
-  tumblr: 
-  twitter: 
-  wordpress: 
-  youtube: 
-  
-  # Scripts
-  google_analytics: "UA-58678545-1"
-  disqus_shortname: "zhwbqd"
-  
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-  
-  # Colors, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
+author:
+  name: Wenbin Zhang
+  url: https://github.com/zhwbqd
 
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
+twitter:
+  username: JackZhwbqd
 
-# BUILD SETTINGS
-#markdown: kramdown
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: :compressed
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Wenbin Zhang"
+      image: "apple-touch-icon.png"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "Wenbin Zhang"
+      image: "apple-touch-icon.png"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+remote_theme: zivong/jekyll-theme-hydure
+
+paginate: 10
+
+disqus: zhwbqd
+google_analytics: UA-58678545-1
+
+tags_path: /tags/
+categories_path: /categories/

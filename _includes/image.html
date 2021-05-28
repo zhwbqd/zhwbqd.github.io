@@ -1,0 +1,10 @@
+{%- capture default_dir -%}/assets/img/posts/{{ page.title | slugify }}{%- endcapture -%}
+{%- assign dir = include.dir | default: default_dir -%}
+{%- if include.figcaption -%}
+<figure>
+  <img src="{{ dir }}/{{ include.name }}" alt="{{ include.figcaption }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.class %}class="{{ include.class }}"{% endif %}/>
+  <figcaption {% if include.class %}class="{{ include.class }}"{% endif %}>{{ include.figcaption }}</figcaption>
+</figure>
+{%- else -%}
+<img src="{{ dir }}/{{ include.name }}" alt="{{ include.alt }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.class %}class="{{ include.class }}"{% endif %} />
+{%- endif -%}

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+jpegtran -optimize -outfile $1 $1

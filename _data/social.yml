@@ -1,0 +1,18 @@
+- title: Feed
+  url: /feed.xml
+  icon: fas fa-rss
+- title: Email
+  url: mailto:zhwbqd@gmail.com
+  icon: fas fa-envelope
+- title: GitHub
+  url: https://github.com/zhwbqd
+  icon: fab fa-github
+- title: Stack Overflow
+  url: https://stackoverflow.com/users/2294051/jack-zhang
+  icon: fab fa-stack-overflow
+- title: Twitter
+  url: https://twitter.com/JackZhwbqd
+  icon: fab fa-twitter
+- title: Instagram
+  url: https://www.instagram.com/zhwbqd/
+  icon: fab fa-instagram
