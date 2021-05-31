@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Scheduler实现解析"
 comments: true
-tags: Spring
+tags: 技术与产品
 ---
 
 Spring3.0之后, 增加了调度器功能, 提供的@Schedule注解, 想必大家都用过, 有了它, 基本上Quartz就可以下岗了. 那么它内部是如何实现的呢? 

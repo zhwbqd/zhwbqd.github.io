@@ -2,7 +2,7 @@
 layout: post
 title: "我看单元测试"
 comments: true
-tags: 个人
+tags: 技术与产品
 ---
 
 谢@walter邀, 来介绍一下我这些年写单元测试的体验. 大家可以来[GitHub Page](https://github.com/WalterInSH/unit-testing)提提自己的看法 !
@@ -51,6 +51,6 @@ tags: 个人
 
 
 
- 
+
 
 

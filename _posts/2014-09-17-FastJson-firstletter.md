@@ -2,7 +2,7 @@
 layout: post
 title: "Fastjson首字母小写"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 项目组使用FastJson, 在输出下面一段Json的时候出现此问题, 期望是大写但是fastJson将值自动首字母变成小写了
@@ -19,7 +19,7 @@ tags: JAVA
 2. 一般只是极少数的代码出现此情况, 那么建议直接在你的单例Service初始化时, 在静态块中直接改变TypeUtils的变量值, 如果用Spring的话可以使用InitializingBean进行处理
 > TypeUtils.compatibleWithJavaBean = true;
 3. 此变量是public的注意要在一个地方进行改动, 避免线程安全问题
- 
+
 附上TypeUtils.java部分代码如下:
 
 ```java

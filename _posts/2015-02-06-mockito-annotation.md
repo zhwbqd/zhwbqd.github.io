@@ -2,7 +2,7 @@
 layout: post
 title: "Mockito 注解使用"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 #### Mockito简介

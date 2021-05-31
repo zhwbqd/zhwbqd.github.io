@@ -2,7 +2,7 @@
 layout: post
 title: "事务与动态数据源"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 #### 问题描述:

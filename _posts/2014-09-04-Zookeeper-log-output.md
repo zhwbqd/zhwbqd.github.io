@@ -2,7 +2,7 @@
 layout: post
 title: "Zookeeper 日志输出指定文件夹"
 comments: true
-tags: NOSQL
+tags: 技术与产品
 ---
 
 最近在研究Zookeeper Storm Kafka, 顺便在本地搭了一套集群, 遇到了Zookeeper日志问题输出路径的问题, 发现zookeeper设置log4j.properties不能解决日志路径问题, 发现解决方案如下:

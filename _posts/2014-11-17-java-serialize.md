@@ -2,7 +2,7 @@
 layout: post
 title: "Java序列化 InvalidClassException"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 类实现序列化接口, 进行序列化反序列化的时候, 抛出 java.io.InvalidClassException 异常

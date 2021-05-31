@@ -2,7 +2,7 @@
 layout: post
 title: "Kafka UnresolveAddressException"
 comments: true
-tags: NOSQL
+tags: 技术与产品
 ---
 
 最近写的 binlog2kafka storm job 上线在一个新的集群环境中(storm 0.9.0.1, kafka 0.8), storm job 运行时报出如下异常:
@@ -36,5 +36,4 @@ Caused by: java.nio.channels.UnresolvedAddressException
 
 
 **问题在于: storm kafkaSpout 通过ZK去获取kafka的地址, 但是zk中保存的kafka是以域名的方式保存的, 而新集群上没有配置相关的hosts, 所以只需要在新集群的supervior机器上的/etc/hosts加上对应的kafka hosts即可**
-
 

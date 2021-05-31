@@ -2,7 +2,7 @@
 layout: post
 title: "Maven release plugin 心得"
 comments: true
-tags: Tools Maven
+tags: 技术与产品
 ---
 
 说到Maven 和 Maven 相关的Plugin, 有很多大家耳熟能详的. 但是跟项目发布相关的插件, 首推[maven release plugin](http://maven.apache.org/maven-release/maven-release-plugin/), 省心太多!

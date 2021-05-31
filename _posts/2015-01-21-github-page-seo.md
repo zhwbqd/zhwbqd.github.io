@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub Page的SEO"
 comments: true
-tags: 个人
+tags: 技术与产品
 ---
 
 在Blog搭建完成后, 有的同学问我, 个人Blog是否能被搜索引擎收录?

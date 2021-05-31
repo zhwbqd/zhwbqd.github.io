@@ -2,7 +2,7 @@
 layout: post
 title: "前端之路--SpringMVC+Angular 文件上传下载"
 comments: true
-tags: JAVA Spring
+tags: 技术与产品
 ---
 
 最近一段时间一直在做一些前端相关的开发, 感觉是一如前端深似海啊, 对js是又爱又恨的. 方便, 快速是js和其他弱类型语言的优势; 但是谈到代码的可读性, 可维护性和模块封装的话, 那就是java, c++这种强类型语言的优势了, 用js写一个数百行的代码, 虽然加了注释但是感觉可读性还是比较差, 少了封装, 重复代码率也比较高.
@@ -14,7 +14,7 @@ tags: JAVA Spring
 文件上传, HTML本身支持的文件上传不够优雅, 与Angular结合度比较低. github上关于这块的开源项目比较多, 最终选择了功能更为强大, 文档写的更细致的angular-file-upload.
 
 #### 使用组件:
-	
+
 > [angularFileUpload](https://github.com/nervgh/angular-file-upload)
 
 	1. 支持多文件批量上传
@@ -26,7 +26,7 @@ tags: JAVA Spring
 	4. 支持拖拽上传
 	
 	5. API文档详细, 例子全面.
-	
+
 示例代码:
 
 ```html
@@ -99,9 +99,9 @@ angular.module('pluginMgmt', ['ngDialog', 'angularFileUpload'])
         };
 	}
 ```
-	
+
 > SpringMVC
-	
+
 SpringMVC上传只是老生常谈的问题, 只是注意几个点就可以
 
 	1. pom中添加[commons-fileupload]依赖
@@ -109,7 +109,7 @@ SpringMVC上传只是老生常谈的问题, 只是注意几个点就可以
 	2. bean.xml中需要增加 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" /> 指定mvc使用multipartResolver
 	
 	3. 如果需要在上传文件的同时传参, 那么需要在js中加入formData即可, 注意formData是数组类型, API文档写的好! SpringMVC端改动不大
-	
+
 示例代码:
 
 ```java

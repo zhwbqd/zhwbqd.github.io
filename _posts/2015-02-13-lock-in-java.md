@@ -2,7 +2,7 @@
 layout: post
 title: "浅谈Java中的锁"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 锁在并发编程中的重要性不言而喻, 但是如何更好地选择, 下面借几个问答来开始吧! 后续我会再写一篇有关于无锁队列的Blog
@@ -328,4 +328,3 @@ protected final boolean tryAcquire(int acquires) {
 > 2. [并发编程网关于同步器的介绍](http://ifeve.com/introduce-abstractqueuedsynchronizer/)
 
 > 3. [并发编程网关于读写锁的介绍](http://ifeve.com/read-write-locks/)
-  

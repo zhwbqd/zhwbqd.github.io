@@ -2,7 +2,7 @@
 layout: post
 title: "MYSQL分组聚合实现"
 comments: true
-tags: SQL
+tags: 技术与产品
 ---
 
 MySQL中没有类似oracle和postgreSQL的 OVER(PARTITION BY)功能. 那么如何在MYSQL中搞定分组聚合的查询呢?

@@ -2,7 +2,7 @@
 layout: post
 title: "解析与实战JDK Unsafe"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 说到锁, 无锁队列, 那么就不能不说 **sun.misc.Unsafe** , juc底层的操作很多都是依赖于Unsafe提供的方法. 事实上它能做的事情远远多于这些.

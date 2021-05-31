@@ -2,7 +2,7 @@
 layout: post
 title: "Kafka OffsetOutofRangeException"
 comments: true
-tags: NOSQL
+tags: 技术与产品
 ---
 
 最近公司的zk的down掉了,  storm job 重启的时候报出 kafka.common.OffsetOutOfRangeException 异常
@@ -43,6 +43,6 @@ public void forceStartOffsetTime(long millis) {
 
         } 
 ```
- 
+
 
 发布Topology的时候, 如果需要从最新记录读取, 则像这样  storm jar com.abc.StormTopology stormTopology -1

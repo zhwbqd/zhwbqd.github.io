@@ -2,7 +2,7 @@
 layout: post
 title: "MYSQL索引优化"
 comments: true
-tags: SQL
+tags: 技术与产品
 ---
 
 #### Btree:
@@ -11,7 +11,7 @@ tags: SQL
 2. 多列索引如果带范围的话, 后续列不会作为筛选条件
 3. 多列索引应选择过滤性更好的充当前缀索引
 4. 尽量按主键顺序插入, 减少页分裂, 采用自增ID在高并发情况下, 可能造成明显征用, 或者更改innodb_autoinc_lock_mode配置.
- 
+
 #### Hash:
 
 1. 只有精确匹配所有列的查询才有效, 对于每行数据, 引擎都会对所有索引列计算hash码
@@ -25,7 +25,7 @@ tags: SQL
 > *  不适合对选择性很低的列上建立索引, 冲突越多, 代价越大
 
 4. 在innoDB上创建自定义hash索引, 思路: 在Btree上创建伪hash索引, 例如要保持大量url, 根据url进行查询, 如果使用btree, 存储内容会很大, 增加一个url_crc列, 使用CRC32进行hash, 查询的时候使用select id from url where url=CRC32("http://sdad.com"); 这样做性能非常高, 维护hash索引值可以手动维护, 也可用触发器, 不能采用SHA1或者MD5作为hash函数, 因为这两个函数的计算hash值非常大, 浪费空间, 消除冲突在这里不是最高要求,  出现hash冲突, 可采用select id from url where url_crc=CRC32("http://sadsa") AND url = "hhtp://asdad.com", 也可使用FNV64()作为hash函数, 冲突小很多
- 
+
 #### Explain:
 1. Using union 说明索引应该合并
 2. using index 说明是覆盖索引, 赞

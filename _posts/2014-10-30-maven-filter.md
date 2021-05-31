@@ -2,7 +2,7 @@
 layout: post
 title: "Maven Filter"
 comments: true
-tags: JAVA
+tags: 技术与产品
 ---
 
 Maven提供了一个很不错的功能 Resource Filter, 可以将按不同环境的进行变量赋值, 比如数据库链接, redis, 日志输出位置等等.. 具体的filter如何使用我这里不做介绍, 只是把一些问题记录下来

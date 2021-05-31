@@ -2,7 +2,7 @@
 layout: post
 title: "KafkaSpout重复消费问题"
 comments: true
-tags: NOSQL
+tags: 技术与产品
 ---
 
 使用https://github.com/nathanmarz/storm-contrib来对接Kafka0.7.2时, 发现kafkaSpout总会进行数据重读, 配置都无问题, 也没报错
